@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-04T09:27:25.872Z</updated>
+  <updated>2017-12-04T11:46:30.738Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>next主题下功能完善（1）</title>
+    <link href="http://yoursite.com/2017/12/03/next%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%8A%9F%E8%83%BD%E5%AE%8C%E5%96%84%EF%BC%881%EF%BC%89/"/>
+    <id>http://yoursite.com/2017/12/03/next主题下功能完善（1）/</id>
+    <published>2017-12-03T12:48:39.000Z</published>
+    <updated>2017-12-04T11:46:30.738Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>这几天刚把博客搭建起来，看到next主题不错就选用了，接着研究next主题设置，中途遇到许多大大小小的问题，以此记录。  </p><p>tips：请根据上一篇《hexo+github创建个人博客》第7点完成next主题替换。我的next版本5.12</p><h1 id="1-语言设置"><a href="#1-语言设置" class="headerlink" title="1.语言设置"></a>1.语言设置</h1><p>打开根目录下的_config.yml，找到language，设置为zh-Hans（language: zh-Hans），即可配置为中文 。<br>tips：冒号后面有空格，后面的配置都是这样。</p><h1 id="2-完善网站标题"><a href="#2-完善网站标题" class="headerlink" title="2. 完善网站标题"></a>2. 完善网站标题</h1><p>打开根目录下的_config.yml，配置：</p><pre><code>title: 小易的博客 #网站标题subtitle: 越学越无法自拔 #个性签名description: #博文描述author: 小易 #博主名称</code></pre><h1 id="3-next样式替换"><a href="#3-next样式替换" class="headerlink" title="3.next样式替换"></a>3.next样式替换</h1><p>next有四种样式：<br><img src="https://i.imgur.com/zMxrDuC.png" alt=""></p><p>打开theme/next/_config.yml，找到如图<br>去掉#和把原来的加上#即可替换样式（选择自己喜欢的）。  </p><h1 id="4-设置头像"><a href="#4-设置头像" class="headerlink" title="4.设置头像"></a>4.设置头像</h1><ol><li>把你的头像图片放于themes\next\source\images下</li><li>打开theme/next/_config.yml</li><li>找到avatar</li><li>更改图片地址即可（第一次不显示，后面博主把图片格式改成和它一样就好了）</li></ol><h1 id="5-添加友情链接和社交连接"><a href="#5-添加友情链接和社交连接" class="headerlink" title="5.添加友情链接和社交连接"></a>5.添加友情链接和社交连接</h1><p>打开theme/next/_config.yml，找到如图：<br><img src="https://i.imgur.com/tkx1pJX.png" alt=""><br>1.social格式为：名称： 链接 || icon<br>更改即可，social_icons改为true<br>2.link格式： 名称： 地址   </p><h1 id="设置主页不显示全文"><a href="#设置主页不显示全文" class="headerlink" title="设置主页不显示全文"></a>设置主页不显示全文</h1><ol><li>打开theme/next/_config.yml</li><li>找到auto_excerpt，改为true即可</li></ol><h1 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h1><ol><li>打开git（git位置在你博客根目录）</li><li>执行npm install –save hexo-generator-feed，下载插件到node_modules</li><li>打开根目录下_config.yml</li><li>在下方添加  ：  <h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-http-hexo-io-plugins"><a href="#Plugins-http-hexo-io-plugins" class="headerlink" title="Plugins: http://hexo.io/plugins/"></a>Plugins: <a href="http://hexo.io/plugins/" target="_blank" rel="noopener">http://hexo.io/plugins/</a></h2>plugins: hexo-generate-feed</li><li>打开theme/next/_config.yml</li><li>找到rss，冒号后面添加atom.xml（即 rss: atom.xml），即可</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h1&gt;&lt;p&gt;这几天刚把博客搭建起来，看到next主题不错就选用了，接着研究next主题设置，中途遇到许多大大小小的问题，以此记录。  &lt;/p&gt;
+&lt;p&gt;t
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+    
+      <category term="next" scheme="http://yoursite.com/tags/next/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo+github创建个人博客</title>
