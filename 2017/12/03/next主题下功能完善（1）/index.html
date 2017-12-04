@@ -108,7 +108,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/zMxrDuC.png">
 <meta property="og:image" content="https://i.imgur.com/tkx1pJX.png">
-<meta property="og:updated_time" content="2017-12-04T11:46:30.738Z">
+<meta property="og:updated_time" content="2017-12-04T12:05:35.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next主题下功能完善（1）">
 <meta name="twitter:description" content="说明这几天刚把博客搭建起来，看到next主题不错就选用了，接着研究next主题设置，中途遇到许多大大小小的问题，以此记录。   tips：请根据上一篇《hexo+github创建个人博客》第7点完成next主题替换。我的next版本5.12 1.语言设置打开根目录下的_config.yml，找到language，设置为zh-Hans（language: zh-Hans），即可配置为中文 。tips">
@@ -456,8 +456,13 @@ author: 小易 #博主名称
 <li>打开git（git位置在你博客根目录）</li>
 <li>执行npm install –save hexo-generator-feed，下载插件到node_modules</li>
 <li>打开根目录下_config.yml</li>
-<li>在下方添加  ：  <h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-http-hexo-io-plugins"><a href="#Plugins-http-hexo-io-plugins" class="headerlink" title="Plugins: http://hexo.io/plugins/"></a>Plugins: <a href="http://hexo.io/plugins/" target="_blank" rel="noopener">http://hexo.io/plugins/</a></h2>plugins: hexo-generate-feed</li>
-<li>打开theme/next/_config.yml</li>
+<li><p>在下方添加:</p>
+<pre><code>#Extensions  
+##Plugins: http://hexo.io/plugins/  
+    plugins: hexo-generate-feed
+</code></pre></li>
+<li><p>打开theme/next/_config.yml</p>
+</li>
 <li>找到rss，冒号后面添加atom.xml（即 rss: atom.xml），即可</li>
 </ol>
 
@@ -725,7 +730,7 @@ author: 小易 #博主名称
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-语言设置"><span class="nav-number">2.</span> <span class="nav-text">1.语言设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-完善网站标题"><span class="nav-number">3.</span> <span class="nav-text">2. 完善网站标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-next样式替换"><span class="nav-number">4.</span> <span class="nav-text">3.next样式替换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-设置头像"><span class="nav-number">5.</span> <span class="nav-text">4.设置头像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-添加友情链接和社交连接"><span class="nav-number">6.</span> <span class="nav-text">5.添加友情链接和社交连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置主页不显示全文"><span class="nav-number">7.</span> <span class="nav-text">设置主页不显示全文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加RSS"><span class="nav-number">8.</span> <span class="nav-text">添加RSS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Extensions"><span class="nav-number">9.</span> <span class="nav-text">Extensions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Plugins-http-hexo-io-plugins"><span class="nav-number">9.1.</span> <span class="nav-text">Plugins: http://hexo.io/plugins/</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-语言设置"><span class="nav-number">2.</span> <span class="nav-text">1.语言设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-完善网站标题"><span class="nav-number">3.</span> <span class="nav-text">2. 完善网站标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-next样式替换"><span class="nav-number">4.</span> <span class="nav-text">3.next样式替换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-设置头像"><span class="nav-number">5.</span> <span class="nav-text">4.设置头像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-添加友情链接和社交连接"><span class="nav-number">6.</span> <span class="nav-text">5.添加友情链接和社交连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置主页不显示全文"><span class="nav-number">7.</span> <span class="nav-text">设置主页不显示全文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加RSS"><span class="nav-number">8.</span> <span class="nav-text">添加RSS</span></a></li></ol></div>
             
 
           </div>
