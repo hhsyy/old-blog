@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-04T14:40:56.997Z</updated>
+  <updated>2017-12-05T13:03:20.566Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,6 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>学习从安装开始之jdk</title>
+    <link href="http://yoursite.com/2017/12/05/%E5%AD%A6%E4%B9%A0%E4%BB%8E%E5%AE%89%E8%A3%85%E5%BC%80%E5%A7%8B%E4%B9%8Bjdk/"/>
+    <id>http://yoursite.com/2017/12/05/学习从安装开始之jdk/</id>
+    <published>2017-12-05T11:29:53.000Z</published>
+    <updated>2017-12-05T13:03:20.566Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-jdk是什么？"><a href="#1-jdk是什么？" class="headerlink" title="1.jdk是什么？"></a>1.jdk是什么？</h1><p>jdk是java语言开发工具包，含有java的运行环境与java工具。<br><br><br><br></p><h1 id="2-如何下载jdk-（以windows为例）"><a href="#2-如何下载jdk-（以windows为例）" class="headerlink" title="2.如何下载jdk （以windows为例）"></a>2.如何下载jdk （以windows为例）</h1><ol><li>搜索网页：<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>      （或者百度：搜索“jdk”，第一个）</li><li>勾选Accept….，选择windows下载。<br><img src="https://i.imgur.com/qUZrsmZ.png" alt=""><br><br><h1 id="3-安装jdk"><a href="#3-安装jdk" class="headerlink" title="3.安装jdk"></a>3.安装jdk</h1>双击下好的文件，更改jdk和jre地址（如jdk:E:\css\java\jdk,  jre:E:\css\java\jre）（把jre安装进jdk文件夹里，我这后面会出问题）<br><img src="https://i.imgur.com/EdSKDWf.png" alt=""><br><img src="https://i.imgur.com/z0JTRAq.png" alt=""><br><br><br><br><h1 id="4-配置jdk"><a href="#4-配置jdk" class="headerlink" title="4.配置jdk"></a>4.配置jdk</h1>1.右键单击我的电脑左键，打开“属性”，左侧“高级系统设置”，打开环境设置<br><br><br><img src="https://i.imgur.com/YQtgbHF.png" alt=""><br><br><br><br>2.在系统变量中单击“新建”，如图设置变量名（JAVA_HOME）和变量值（你的jdk地址，不是jre）<br><img src="https://i.imgur.com/2Z2UNJT.png" alt=""><br><br><br><br>3.在系统变量中找到“path”，点击编辑，在末尾添加：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;（如果之前没有分号，请添加英文下的分号）<br><br><br><img src="https://i.imgur.com/TI5iA1k.png" alt=""><br><br> <br><br>4.一路确定即可，打开cmd（win+r后输入cmd），在命令窗口欧输入javac（编译环境）和java（运行环境），看到如图界面环境就安装好了。<br><br><br><img src="https://i.imgur.com/pwCv0eG.png" alt=""><br><img src="https://i.imgur.com/pqQQMWk.png" alt=""></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;1-jdk是什么？&quot;&gt;&lt;a href=&quot;#1-jdk是什么？&quot; class=&quot;headerlink&quot; title=&quot;1.jdk是什么？&quot;&gt;&lt;/a&gt;1.jdk是什么？&lt;/h1&gt;&lt;p&gt;jdk是java语言开发工具包，含有java的运行环境与java工具。&lt;br&gt;&lt;br
+      
+    
+    </summary>
+    
+      <category term="安装教程" scheme="http://yoursite.com/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="jdk" scheme="http://yoursite.com/tags/jdk/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo+github创建个人博客</title>
     <link href="http://yoursite.com/2017/12/03/hexo-github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2017/12/03/hexo-github创建个人博客/</id>
@@ -24,33 +49,6 @@
     <updated>2017-12-04T14:40:56.997Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="280" height="86" src="//music.163.com/outchain/player?type=2&id=32192436&auto=1&height=66"></iframe>    <h1 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h1><pre><code>- git（注册好github账号，下载对应系统版本git）- node.js（百度下载安装）</code></pre><h1 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h1><pre><code>1. 创建文件夹（自己定义位置与名称）2. 单击右键Git Bash Here（需已安装好git）3. 在命令窗口处输入： npm install -g hexo（创建的目录下，以下的命令都在其窗口操作）4. 安装npm，命令： npm install5. 安装完成可查看版本（hexo -v，node -v，npm -v）</code></pre><h1 id="3-创建github仓库"><a href="#3-创建github仓库" class="headerlink" title="3.创建github仓库"></a>3.创建github仓库</h1><p><em>前提：你已注册</em></p><pre><code>1. 打开你的github，新建新的仓库 2. 在Repository name输入框需按照：yourname.github.io命名，后面默认创建即可（需public）3. 如买域名（自行购买）请继续看，无则无需观看下面两点（github作为服务器）4. 于你根目录下（你创建的目录）新建文件CNAME，无后缀，填入你的域名（如www.hhsyy.top）5. 打开你创建的github仓库，点击该仓库的settings，下拉找到Custom domain填入你的域名。6. 在你申请的网站上解析,如阿里云，：点击右上方的新手引导，粘贴ip地址（进入cmd，输入ping http://yourname.github.io/ ，得到IP地址）</code></pre><h1 id="4-搭建博客"><a href="#4-搭建博客" class="headerlink" title="4.搭建博客"></a>4.搭建博客</h1><p><em>前提：把git的user与email设置，ssh授权成功，教程自行百度</em></p><pre><code>1. 初始化hexo：hexo init2. 生成界面：hexo g（hexo generate）3. 启动服务：hexo s（hexo server），此方法Ctrl+c后会4044. 在浏览器输入：http://localhost:4000/（可以看到默认主题界面）5. 更改根目录下（你创建的文件）的_config.yml ：    deploy:      type: git        repo: git@github.com:yourname/yourname.github.io.git      branch: master6.自动部署修改的文件：npm install hexo-deployer-git --save（无需Ctrl+c）7.发布服务：hexo clean &amp;&amp; hexo g &amp;&amp; hexo d（hexo deploy）8.如果配置了ssh不用授权，否则...</code></pre><h1 id="5-预览"><a href="#5-预览" class="headerlink" title="5.预览"></a>5.预览</h1><p>在浏览器输入你的域名，打开，如没有则（<a href="http://yourname.github.io/）" target="_blank" rel="noopener">http://yourname.github.io/）</a></p><h1 id="6-编写博客"><a href="#6-编写博客" class="headerlink" title="6.编写博客"></a>6.编写博客</h1><pre><code>1. 其为使用markdown，按照其规范编写。2. 在根目录下输入hexo new &quot;名称&quot;创建md文件3. 在根目录\source\_posts下找到你创建的文件打开（可下载markdown编译器打开编译）4. 按照md语法编译，md教程直通车[http://www.markdown.cn/]5. 以后每次更改hexo配置和写博文，执行npm install hexo-deployer-git --save+hexo clean &amp;&amp; hexo g &amp;&amp; hexo d（hexo deploy）这两步。</code></pre><h1 id="7-扩展（更换主题）"><a href="#7-扩展（更换主题）" class="headerlink" title="7.扩展（更换主题）"></a>7.扩展（更换主题）</h1><pre><code>1. 选取主题，https://hexo.io/themes/2. 点击名称进入github，找到clone or download，复制链接3. 在命令窗口输入git clone 链接 （比如：git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia），详情可参照git命令4. 打开根目录下_config.yml，更改theme（如theme: yilia）5. npm install hexo-deployer-git --save6. hexo clean &amp;&amp; hexo g &amp;&amp; hexo d7. 网页观看即可</code></pre><p>tips：有些主题需下载插件，可以按照github你选择的主题下的教程操作。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;280&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=
-      
-    
-    </summary>
-    
-    
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
-    
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试专用（勿进）</title>
-    <link href="http://yoursite.com/2017/12/03/test/"/>
-    <id>http://yoursite.com/2017/12/03/test/</id>
-    <published>2017-12-03T12:48:39.000Z</published>
-    <updated>2017-12-04T09:24:55.777Z</updated>
-    
-    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="280" height="86" src="//music.163.com/outchain/player?type=2&id=32192436&auto=1&height=66"></iframe><h1 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h1><pre><code>- git（注册好github账号，下载对应系统版本git）- node.js（百度下载安装）</code></pre><h1 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h1><pre><code>1. 创建文件夹（自己定义位置与名称）2. 单击右键Git Bash Here（需已安装好git）3. 在命令窗口处输入： npm install -g hexo（创建的目录下，以下的命令都在其窗口操作）4. 安装npm，命令： npm install5. 安装完成可查看版本（hexo -v，node -v，npm -v）</code></pre><h1 id="3-创建github仓库"><a href="#3-创建github仓库" class="headerlink" title="3.创建github仓库"></a>3.创建github仓库</h1><p><em>前提：你已注册</em></p><pre><code>1. 打开你的github，新建新的仓库 2. 在Repository name输入框需按照：yourname.github.io命名，后面默认创建即可（需public）3. 如买域名（自行购买）请继续看，无则无需观看下面两点（github作为服务器）4. 于你根目录下（你创建的目录）新建文件CNAME，无后缀，填入你的域名（如www.hhsyy.top）5. 打开你创建的github仓库，点击该仓库的settings，下拉找到Custom domain填入你的域名。6. 在你申请的域名网站上解析（http://yourname.github.io/）</code></pre><h1 id="4-搭建博客"><a href="#4-搭建博客" class="headerlink" title="4.搭建博客"></a>4.搭建博客</h1><p><em>前提：把git的user与email设置，ssh授权成功，教程自行百度</em></p><pre><code>1. 初始化hexo：hexo init2. 生成界面：hexo g（hexo generate）3. 启动服务：hexo s（hexo server），此方法Ctrl+c后会4044. 在浏览器输入：http://localhost:4000/（可以看到默认主题界面）5. 更改根目录下（你创建的文件）的_config.yml ：    deploy:      type: git        repo: git@github.com:yourname/yourname.github.io.git      branch: master6.自动部署修改的文件：npm install hexo-deployer-git --save（无需Ctrl+c）7.发布服务：hexo clean &amp;&amp; hexo g &amp;&amp; hexo d（hexo deploy）8.如果配置了ssh不用授权，否则...</code></pre><h1 id="5-预览"><a href="#5-预览" class="headerlink" title="5.预览"></a>5.预览</h1><p>在浏览器输入你的域名，打开，如没有则（<a href="http://yourname.github.io/）。" target="_blank" rel="noopener">http://yourname.github.io/）。</a></p><h1 id="6-编写博客"><a href="#6-编写博客" class="headerlink" title="6.编写博客"></a>6.编写博客</h1><pre><code>1. 其为使用markdown，按照其规范编写。2. 在根目录下输入hexo new &quot;名称&quot;创建md文件3. 在根目录\source\_posts下找到你创建的文件打开（可下载markdown编译器打开编译）4. 按照md语法编译，md教程直通车[http://www.markdown.cn/]</code></pre><h1 id="7-扩展（更换主题）"><a href="#7-扩展（更换主题）" class="headerlink" title="7.扩展（更换主题）"></a>7.扩展（更换主题）</h1><pre><code>1. 选取主题，https://hexo.io/themes/2. 点击名称进入github，找到clone or download，复制链接3. 在命令窗口输入git clone 链接 （比如：git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia），详情可参照git命令4. 打开根目录下_config.yml，更改theme（如theme: yilia）5. npm install hexo-deployer-git --save6. hexo clean &amp;&amp; hexo g &amp;&amp; hexo d7. 网页观看即可</code></pre><p>tips：有些主题需下载插件，可以按照github你选择的主题下的教程操作。</p>]]></content>
     
     <summary type="html">
     
@@ -95,6 +93,33 @@
       <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
     
       <category term="next" scheme="http://yoursite.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试专用（勿进）</title>
+    <link href="http://yoursite.com/2017/12/03/test/"/>
+    <id>http://yoursite.com/2017/12/03/test/</id>
+    <published>2017-12-03T12:48:39.000Z</published>
+    <updated>2017-12-04T09:24:55.777Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="280" height="86" src="//music.163.com/outchain/player?type=2&id=32192436&auto=1&height=66"></iframe><h1 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h1><pre><code>- git（注册好github账号，下载对应系统版本git）- node.js（百度下载安装）</code></pre><h1 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h1><pre><code>1. 创建文件夹（自己定义位置与名称）2. 单击右键Git Bash Here（需已安装好git）3. 在命令窗口处输入： npm install -g hexo（创建的目录下，以下的命令都在其窗口操作）4. 安装npm，命令： npm install5. 安装完成可查看版本（hexo -v，node -v，npm -v）</code></pre><h1 id="3-创建github仓库"><a href="#3-创建github仓库" class="headerlink" title="3.创建github仓库"></a>3.创建github仓库</h1><p><em>前提：你已注册</em></p><pre><code>1. 打开你的github，新建新的仓库 2. 在Repository name输入框需按照：yourname.github.io命名，后面默认创建即可（需public）3. 如买域名（自行购买）请继续看，无则无需观看下面两点（github作为服务器）4. 于你根目录下（你创建的目录）新建文件CNAME，无后缀，填入你的域名（如www.hhsyy.top）5. 打开你创建的github仓库，点击该仓库的settings，下拉找到Custom domain填入你的域名。6. 在你申请的域名网站上解析（http://yourname.github.io/）</code></pre><h1 id="4-搭建博客"><a href="#4-搭建博客" class="headerlink" title="4.搭建博客"></a>4.搭建博客</h1><p><em>前提：把git的user与email设置，ssh授权成功，教程自行百度</em></p><pre><code>1. 初始化hexo：hexo init2. 生成界面：hexo g（hexo generate）3. 启动服务：hexo s（hexo server），此方法Ctrl+c后会4044. 在浏览器输入：http://localhost:4000/（可以看到默认主题界面）5. 更改根目录下（你创建的文件）的_config.yml ：    deploy:      type: git        repo: git@github.com:yourname/yourname.github.io.git      branch: master6.自动部署修改的文件：npm install hexo-deployer-git --save（无需Ctrl+c）7.发布服务：hexo clean &amp;&amp; hexo g &amp;&amp; hexo d（hexo deploy）8.如果配置了ssh不用授权，否则...</code></pre><h1 id="5-预览"><a href="#5-预览" class="headerlink" title="5.预览"></a>5.预览</h1><p>在浏览器输入你的域名，打开，如没有则（<a href="http://yourname.github.io/）。" target="_blank" rel="noopener">http://yourname.github.io/）。</a></p><h1 id="6-编写博客"><a href="#6-编写博客" class="headerlink" title="6.编写博客"></a>6.编写博客</h1><pre><code>1. 其为使用markdown，按照其规范编写。2. 在根目录下输入hexo new &quot;名称&quot;创建md文件3. 在根目录\source\_posts下找到你创建的文件打开（可下载markdown编译器打开编译）4. 按照md语法编译，md教程直通车[http://www.markdown.cn/]</code></pre><h1 id="7-扩展（更换主题）"><a href="#7-扩展（更换主题）" class="headerlink" title="7.扩展（更换主题）"></a>7.扩展（更换主题）</h1><pre><code>1. 选取主题，https://hexo.io/themes/2. 点击名称进入github，找到clone or download，复制链接3. 在命令窗口输入git clone 链接 （比如：git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia），详情可参照git命令4. 打开根目录下_config.yml，更改theme（如theme: yilia）5. npm install hexo-deployer-git --save6. hexo clean &amp;&amp; hexo g &amp;&amp; hexo d7. 网页观看即可</code></pre><p>tips：有些主题需下载插件，可以按照github你选择的主题下的教程操作。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;280&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=
+      
+    
+    </summary>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
     
   </entry>
   
