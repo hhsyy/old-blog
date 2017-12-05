@@ -114,7 +114,7 @@
 <meta property="og:image" content="https://i.imgur.com/TI5iA1k.png">
 <meta property="og:image" content="https://i.imgur.com/pwCv0eG.png">
 <meta property="og:image" content="https://i.imgur.com/pqQQMWk.png">
-<meta property="og:updated_time" content="2017-12-05T13:03:20.566Z">
+<meta property="og:updated_time" content="2017-12-05T14:35:00.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习从安装开始之jdk">
 <meta name="twitter:description" content="1.jdk是什么？jdk是java语言开发工具包，含有java的运行环境与java工具。 2.如何下载jdk （以windows为例） 搜索网页：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html      （或者百度：搜索“jdk”，第一个） 勾选Accept….，选择window">
@@ -449,10 +449,10 @@
       
 
       
-        <h1 id="1-jdk是什么？"><a href="#1-jdk是什么？" class="headerlink" title="1.jdk是什么？"></a>1.jdk是什么？</h1><p>jdk是java语言开发工具包，含有java的运行环境与java工具。<br><br><br><br></p>
+        <h1 id="1-jdk是什么？"><a href="#1-jdk是什么？" class="headerlink" title="1.jdk是什么？"></a>1.jdk是什么？</h1><p>jdk是java语言开发工具包，含有java的运行环境与java工具。<br><br></p>
 <h1 id="2-如何下载jdk-（以windows为例）"><a href="#2-如何下载jdk-（以windows为例）" class="headerlink" title="2.如何下载jdk （以windows为例）"></a>2.如何下载jdk （以windows为例）</h1><ol>
 <li>搜索网页：<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>      （或者百度：搜索“jdk”，第一个）</li>
-<li>勾选Accept….，选择windows下载。<br><img src="https://i.imgur.com/qUZrsmZ.png" alt=""><br><br><h1 id="3-安装jdk"><a href="#3-安装jdk" class="headerlink" title="3.安装jdk"></a>3.安装jdk</h1>双击下好的文件，更改jdk和jre地址（如jdk:E:\css\java\jdk,  jre:E:\css\java\jre）（把jre安装进jdk文件夹里，我这后面会出问题）<br><img src="https://i.imgur.com/EdSKDWf.png" alt=""><br><img src="https://i.imgur.com/z0JTRAq.png" alt=""><br><br><br><br><h1 id="4-配置jdk"><a href="#4-配置jdk" class="headerlink" title="4.配置jdk"></a>4.配置jdk</h1>1.右键单击我的电脑左键，打开“属性”，左侧“高级系统设置”，打开环境设置<br><br><br><img src="https://i.imgur.com/YQtgbHF.png" alt=""><br><br><br><br>2.在系统变量中单击“新建”，如图设置变量名（JAVA_HOME）和变量值（你的jdk地址，不是jre）<br><img src="https://i.imgur.com/2Z2UNJT.png" alt=""><br><br><br><br>3.在系统变量中找到“path”，点击编辑，在末尾添加：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;（如果之前没有分号，请添加英文下的分号）<br><br><br><img src="https://i.imgur.com/TI5iA1k.png" alt=""><br><br> <br><br>4.一路确定即可，打开cmd（win+r后输入cmd），在命令窗口欧输入javac（编译环境）和java（运行环境），看到如图界面环境就安装好了。<br><br><br><img src="https://i.imgur.com/pwCv0eG.png" alt=""><br><img src="https://i.imgur.com/pqQQMWk.png" alt=""></li>
+<li>勾选Accept….，选择windows下载。<br><img src="https://i.imgur.com/qUZrsmZ.png" alt=""><br><br><br><br><h1 id="3-安装jdk"><a href="#3-安装jdk" class="headerlink" title="3.安装jdk"></a>3.安装jdk</h1>双击下好的文件，更改jdk和jre地址（如jdk:E:\css\java\jdk,  jre:E:\css\java\jre）（把jre安装进jdk文件夹里，我这后面会出问题）<br><img src="https://i.imgur.com/EdSKDWf.png" alt=""><br><img src="https://i.imgur.com/z0JTRAq.png" alt=""><br><br><br><br><h1 id="4-配置jdk"><a href="#4-配置jdk" class="headerlink" title="4.配置jdk"></a>4.配置jdk</h1>1.右键单击我的电脑左键，打开“属性”，左侧“高级系统设置”，打开环境设置<br><br><br><img src="https://i.imgur.com/YQtgbHF.png" alt=""><br>2.在系统变量中单击“新建”，如图设置变量名（JAVA_HOME）和变量值（你的jdk地址，不是jre）<br><img src="https://i.imgur.com/2Z2UNJT.png" alt=""><br>3.在系统变量中找到“path”，点击编辑，在末尾添加：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;（如果之前没有分号，请添加英文下的分号）<br><img src="https://i.imgur.com/TI5iA1k.png" alt=""><br>4.一路确定即可，打开cmd（win+r后输入cmd），在命令窗口欧输入javac（编译环境）和java（运行环境），看到如图界面环境就安装好了。<br><img src="https://i.imgur.com/pwCv0eG.png" alt=""><br><img src="https://i.imgur.com/pqQQMWk.png" alt=""></li>
 </ol>
 
       
@@ -522,6 +522,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/05/学习从安装开始之tomcat/" rel="prev" title="学习从安装开始之tomcat">
+                学习从安装开始之tomcat <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -649,7 +653,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -671,7 +675,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -788,7 +792,7 @@
     
       <span class="post-meta-item-text">网站文章字数总计&#58;</span>
     
-    <span title="网站文章字数总计">2.1k</span>
+    <span title="网站文章字数总计">2.6k</span>
   
 </div>
 
