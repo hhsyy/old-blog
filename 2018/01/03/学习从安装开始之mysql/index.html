@@ -118,7 +118,7 @@
 <meta property="og:image" content="http://hhsyy-1255583673.file.myqcloud.com/mysql/10.PNG">
 <meta property="og:image" content="http://hhsyy-1255583673.file.myqcloud.com/mysql/11.PNG">
 <meta property="og:image" content="http://hhsyy-1255583673.file.myqcloud.com/mysql/12.PNG">
-<meta property="og:updated_time" content="2018-01-03T10:04:09.407Z">
+<meta property="og:updated_time" content="2018-01-03T10:06:24.112Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习从安装开始之mysql（解压版）">
 <meta name="twitter:description" content="1.mysql下载 打开https://dev.mysql.com/downloads/mysql/   选择对应本机电脑的版本（我这64位，现在最新mysql为5.7.20），Dowbload。 点击No thanks, just start my download，完成下载。   2.mysql的安装（5.7.20（解压版））1.解压mysql压缩包，如图设置环境变量（我这mysql bin路">
@@ -460,7 +460,7 @@
 </ol>
 <p><br></p>
 <h1 id="2-mysql的安装（5-7-20（解压版））"><a href="#2-mysql的安装（5-7-20（解压版））" class="headerlink" title="2.mysql的安装（5.7.20（解压版））"></a>2.mysql的安装（5.7.20（解压版））</h1><p>1.解压mysql压缩包，如图设置环境变量（我这mysql bin路径为E:\mysql\mysql-5.7.20-winx64\bin）。<br><img src="http://hhsyy-1255583673.cosgz.myqcloud.com/mysql/3.PNG" alt=""><br>2.由于mysql5.7.20版本没有ini文件和data目录，所以在mysql根目录新建文本更改为my.ini。复制以下内容并更改basedir和datadir路径。data后面会说明。</p>
-<pre><code>`[client]
+<pre><code>[client]
 port=3306
 default-character-set=utf8
 [mysqld] 
@@ -473,7 +473,7 @@ character_set_server=utf8
 sql_mode=NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER
 #开启查询缓存
 explicit_defaults_for_timestamp=true
-skip-grant-tables`
+skip-grant-tables
 </code></pre><p>3.使用管理员权限打开cmd，在cmd中进入mysql bin目录。<br>4.输入 mysqld –initialize-insecure –user=mysql 回车，看到mysql目录下出现了data目录。<br>5.再输入mysqld -install回车，成功后如图。<br><img src="http://hhsyy-1255583673.cosgz.myqcloud.com/mysql/4.PNG" alt=""><br>6.最后输入net start mysql启动mysql即可。<br><img src="http://hhsyy-1255583673.cosgz.myqcloud.com/mysql/5.PNG" alt=""><br>7.观察mysql是否开启，可以win+r后输入services.msc，找到MySQL服务即可看到。<br><img src="http://hhsyy-1255583673.cosgz.myqcloud.com/mysql/6.PNG" alt=""><br>8.命令：  </p>
 <blockquote>
 <p>启动: net start MySQL<br>停止: net stop MySQL<br>卸载: sc delete MySQL  </p>
